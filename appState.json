@@ -1,0 +1,85 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "b0c4456b-608c-4cb3-822d-a70fc168f9cf": {
+        "id": "b0c4456b-608c-4cb3-822d-a70fc168f9cf",
+        "parent": null,
+        "name": "TestCaseIssue",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "1c57dcdd-5c19-4973-a029-e683207e5ee3"
+        ],
+        "isRemovable": false,
+        "filePath": "TestCaseIssue"
+      },
+      "1c57dcdd-5c19-4973-a029-e683207e5ee3": {
+        "id": "1c57dcdd-5c19-4973-a029-e683207e5ee3",
+        "parent": "b0c4456b-608c-4cb3-822d-a70fc168f9cf",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "TestCaseIssue/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "36b19e8e-16ba-44d7-8c04-06f7e7df463b": {
+            "id": "36b19e8e-16ba-44d7-8c04-06f7e7df463b",
+            "name": "Test event",
+            "functionId": "1c57dcdd-5c19-4973-a029-e683207e5ee3",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "rootNode": "b0c4456b-608c-4cb3-822d-a70fc168f9cf",
+    "openFiles": [
+      "1c57dcdd-5c19-4973-a029-e683207e5ee3"
+    ],
+    "currentFileId": "1c57dcdd-5c19-4973-a029-e683207e5ee3",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "TestCaseIssue",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1570517507069
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "TestCaseIssue",
+      "url": "https://github.com/zgma-test/TestCaseIssue"
+    }
+  }
+}
